@@ -78,9 +78,9 @@ st.markdown(
 image_path = os.path.join(os.path.dirname(__file__), "amu_logo.jpg")
 st.image(image_path, width=160)
 # Disposition des logos
- col2, col3 = st.columns([1, 3, 1])
-with col3:
-    st.image("hopital_logo.PNG", width=160)
+image_path = os.path.join(os.path.dirname(__file__), "hopital_logo.PNG")
+st.image(image_path, width=160)
+   
 
 st.title("Optimisation du Dosage Médical")
 

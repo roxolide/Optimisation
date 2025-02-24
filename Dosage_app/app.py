@@ -1,5 +1,6 @@
 import streamlit as st
 import numpy as np
+import os
 import itertools
 
 def calculate_mean(attendue, anova_cst, nb_mes, sd_nb_mes, ratio_ser, sd_ratio_ser):
@@ -74,11 +75,10 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-
+image_path = os.path.join(os.path.dirname(__file__), "amu_logo.jpg")
+st.image(image_path, width=160)
 # Disposition des logos
-col1, col2, col3 = st.columns([1, 3, 1])
-with col1:
-    st.image("amu_logo.jpg", width=160)
+ col2, col3 = st.columns([1, 3, 1])
 with col3:
     st.image("hopital_logo.PNG", width=160)
 
